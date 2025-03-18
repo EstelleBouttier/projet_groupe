@@ -1,0 +1,17 @@
+.navbar-color {
+    background-color: #6C9A8F !important;
+  }
+  
+  .navbar-toggler-color {    
+    background-color: white;
+    margin-left: auto;
+    border: none;
+  }
+  
+  .navbar-height {
+    max-height: 100px;
+  }
+  
+  .nav-link {
+    color: white
+  }
