@@ -1,15 +1,14 @@
 import React from "react";
-import NavBar from "./router/navbar";
-import Home from "./pages/home/home"
-import About from "./pages/about/about";
+import "./App.css";
+import NavBar from "./router/Navbar";
+import Main from "./pages/Main/Main"
 
 function App() {
-   return(
+   return (
       <>
-    <NavBar />
-    <Home />
-    <About />
-    </>
-   ); 
+         <NavBar />
+         <Main />
+      </>
+   );
 }
 export default App;

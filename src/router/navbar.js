@@ -25,13 +25,13 @@ function NavBar() {
             className="me-auto my-2 my-lg-0 navbar-height"
             navbarScroll
           >
-            <Nav.Link href="#action1">Accueil</Nav.Link>
-            <Nav.Link href="#action2">A propos</Nav.Link>
-            <Nav.Link href="#action3">Cours</Nav.Link>
-            <Nav.Link href="#action4">Tarifs</Nav.Link>
-            <Nav.Link href="#action5">Témoignages</Nav.Link>
-            <Nav.Link href="#action6">Contact</Nav.Link>
-            <Nav.Link href="#action7">Réserver un cours</Nav.Link>
+            <Nav.Link href="#home">Accueil</Nav.Link>
+            <Nav.Link href="#about">A propos</Nav.Link>
+            <Nav.Link href="#courses">Cours</Nav.Link>
+            <Nav.Link href="#pricing">Tarifs</Nav.Link>
+            <Nav.Link href="#testimony">Témoignages</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#subcription">Réserver un cours</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

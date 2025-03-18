@@ -1,43 +1,16 @@
 body {
-  background-color: #6c9a8f81;
+  background-color: #6c9a8f54;
+  font-family: 'Poppins', sans-serif;
+  color: #3D3D3D;
 }
 
-
-.navbar-color {
-  background-color: #6C9A8F;
-}
-
-.navbar-toggler-color {    
-  background-color: white;
-  margin-left: auto;
-  border: none;
-}
-
-.navbar-height {
-  max-height: 100px;
-}
-
-.nav-link {
-  color: white
-}
-
-.text_home {
-  justify-content: center;
-}
-
-.titre_accueil {
-  font-family: 'DM Sans',;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
   font-weight: bold;
-  text-align: center;
-}
+} 
 
-.p_accueil {
-  font-family: 'poppins',;
-  text-align: center;
-}
-
-.btn_custom {
-  border: none;
+.cercle-style {
   background-color: #E57A44;
-  border-radius: 30px;
+  width: 104px;
+  height: 104px;
 }
