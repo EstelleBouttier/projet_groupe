@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
-import "./courses.css";
 
 function Courses() {
 
@@ -33,7 +32,7 @@ function Courses() {
     ];
 
     return (
-        <Container>
+        <Container id="courses">
             <Row className="my-5 justify-content-center align-items-center text-center">
                 <Col>
                     <h1 className="mt-3 mb-4">Mais les cours proposés, c'est quoi?</h1>

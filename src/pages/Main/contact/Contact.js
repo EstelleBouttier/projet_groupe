@@ -1,53 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Form, Card, Button } from "react-bootstrap";
 import { BsEnvelope, BsGeoAlt, BsTelephone } from 'react-icons/bs';
-import "./contact.css";
 
 
 function Contact() {
 
-    const monFormulaire = [
-        {
-            id: 1,
-            control: "formName",
-            label: "Nom",
-            type: "text",
-            placeholder: "Dupont"
-        },
-        {
-            id: 2,
-            control: "formFirstName",
-            label: "Prénom",
-            type: "text",
-            placeholder: "Aurélie"
-        },
-        {
-            id: 3,
-            control: "formTel",
-            label: "Téléphone",
-            type: "tel",
-            placeholder: "06 xx xx xx xx"
-        },
-        {
-            id: 4,
-            control: "formEmail",
-            label: "Email",
-            type: "email",
-            placeholder: "nom@exemple.com"
-        },
-        {
-            id: 5,
-            control: "formMessage",
-            label: "Message",
-            as: "textarea",
-            placeholder: "Ecrivez votre message ici"
-        },
-    ];
-
-
     return (
-        <Container>
-            <Row className="d-flex justify-content-center align-items-center">
+        <Container id="contact">
+            <Row className="my-5 d-flex justify-content-center align-items-center">
+                <h1 className="text-center">Contactez-moi</h1>
                 <Col xs={12} md={6}>
                     <Card className="p-4 shadow-sm text-center">
                         <Card.Body>
@@ -72,21 +33,38 @@ function Contact() {
 
 
                 <Col xs={12} md={6}>
-                    <Card className="form-style py-3 px-3 mt-4">
-                        <Form>
-                            {monFormulaire.map((input) => (
-                                <Form.Group key={input.id} className="mb-3" controlId={input.control}>
-                                    <Form.Label>{input.label}</Form.Label>
-                                    <Form.Control as={input.as} type={input.type} placeholder={input.placeholder} required />
+                    <Card className="form-style my-5 shadow-sm">
+                        <Card.Body>
+                            <Card.Title className="mb-3 text-center">Envoyez-moi un message</Card.Title>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="formNom">
+                                    <Form.Label>Nom</Form.Label>
+                                    <Form.Control type="text" placeholder="Dupont" />
                                 </Form.Group>
-                            ))}
-
-                            <div className="d-flex justify-content-end">
-                                <Button className="button-style" type="submit">Envoyer</Button>
-                            </div>
-                        </Form>
+                                <Form.Group className="mb-3" controlId="contactForm.Prenom">
+                                    <Form.Label>Prénom</Form.Label>
+                                    <Form.Control type="text" placeholder="Aurélie" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formEmail">
+                                    <Form.Label>Email</Form.Label>
+                                    <Form.Control type="email" placeholder="nom@exemple.com" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="contactForm.Telephone">
+                                    <Form.Label>Téléphone</Form.Label>
+                                    <Form.Control type="tel" placeholder="061567654534" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formMessage">
+                                    <Form.Label>Message</Form.Label>
+                                    <Form.Control as="textarea" placeholder="Écrivez votre message ici" rows={3} />
+                                </Form.Group>
+                                <div className="d-flex justify-content-end">
+                                    <Button className="button-style" type="submit">Envoyer</Button>
+                                </div>
+                            </Form>
+                        </Card.Body>
                     </Card>
                 </Col>
+
             </Row>
         </Container>
     );

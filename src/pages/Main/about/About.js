@@ -6,8 +6,7 @@ import image from "../../../images/about/about.png"
 
 function About() {
     return (
-        <Container>
-            <div id="about" />
+        <Container id="about">
             <Row>
                 <Col xs={12} sm={12} md={6} lg={6} className="my-5 text-center ms-auto">
                     <h1>Jane Doe</h1>

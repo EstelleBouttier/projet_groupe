@@ -2,6 +2,7 @@ body {
   background-color: #6c9a8f54;
   font-family: 'Poppins', sans-serif;
   color: #3D3D3D;
+  padding-top: 76px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,8 +10,62 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 } 
 
+.btn-custom {
+  border: none;
+  background-color: #E57A44;
+  border-radius: 30px;
+}
+
+.btn-custom:hover {
+  background-color: #e57a44cc;
+}
+
+.list-style {
+  background-color: #f4f8f6;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.form-style {
+  background-color: #6C9A8F;
+}
+
+.button-style {
+  padding: 10px 20px;
+  background-color: #E57A44;
+}
+
+.btn-custom:hover {
+  background-color: #f37f45;
+}
+
 .cercle-style {
   background-color: #E57A44;
   width: 104px;
   height: 104px;
+}
+
+.navbar-color {
+  background-color: #6C9A8F !important;
+}
+
+.navbar-toggler-color {    
+  background-color: white;
+  margin-left: auto;
+  border: none;
+}
+
+.navbar-height {
+  max-height: 1200px;
+}
+
+.nav-link {
+  color: white
 }

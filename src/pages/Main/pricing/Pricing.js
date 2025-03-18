@@ -29,7 +29,7 @@ function Tarifs() {
   ];
 
   return (
-    <Container className="my-5 text-center">
+    <Container id="pricing" className="my-5 text-center">
       <Row>
         <Col>
           <h1>Nos Tarifs</h1>

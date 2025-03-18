@@ -22,12 +22,6 @@ function NavBar() {
             className="me-auto my-2 my-lg-0 navbar-height"
           >
             <Nav.Link href="/">Accueil</Nav.Link>
-            <Nav.Link href="#about">A propos</Nav.Link>
-            <Nav.Link href="#courses">Cours</Nav.Link>
-            <Nav.Link href="#pricing">Tarifs</Nav.Link>
-            <Nav.Link href="#testimony">Témoignages</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="/subscription">Réserver un cours</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
