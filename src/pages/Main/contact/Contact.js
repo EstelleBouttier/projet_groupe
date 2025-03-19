@@ -58,7 +58,7 @@ function Contact() {
                                     <Form.Control as="textarea" placeholder="Écrivez votre message ici" rows={3} />
                                 </Form.Group>
                                 <div className="d-flex justify-content-end">
-                                    <Button className="button-style" type="submit">Envoyer</Button>
+                                    <Button className="btn-custom" type="submit">Envoyer</Button>
                                 </div>
                             </Form>
                         </Card.Body>

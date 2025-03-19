@@ -14,13 +14,13 @@ function About() {
                     <h2 className="fs-4">Philosophie d'enseignement</h2>
                     <p className="py-3">Progressez en français depuis chez vous avec des cours interactifs et adaptés à votre niveau ! Que vous soyez débutant ou avancé, bénéficiez d'un apprentissage dynamique et efficace avec une professeure expérimentée !</p>
                     <div className="d-flex justify-content-center flex-wrap">
-                        <div className="m-1 cercle-style shadow rounded-circle d-flex justify-content-center align-items-center text-white">
+                        <div className="m-1 cercle-style rounded-circle d-flex justify-content-center align-items-center text-white">
                             Bienveillance
                         </div>
-                        <div className="m-1 cercle-style shadow rounded-circle d-flex justify-content-center align-items-center text-white">
+                        <div className="m-1 cercle-style rounded-circle d-flex justify-content-center align-items-center text-white">
                             Pédagogie
                         </div>
-                        <div className="m-1 cercle-style shadow rounded-circle d-flex justify-content-center align-items-center text-white">
+                        <div className="m-1 cercle-style rounded-circle d-flex justify-content-center align-items-center text-white">
                             Patience
                         </div>
                     </div>

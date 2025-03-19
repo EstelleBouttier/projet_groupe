@@ -47,7 +47,7 @@ function Courses() {
                     <ListGroup.Item
                         key={cours.id}
                         as="li"
-                        className="list-style col-sm-12 col-md-6 col-lg-6 m-auto mb-2 d-flex justify-content-between align-items-start"
+                        className="shadow list-style col-sm-12 col-md-6 col-lg-6 m-auto mb-2 d-flex justify-content-between align-items-start"
                     >
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">{cours.title}</div>

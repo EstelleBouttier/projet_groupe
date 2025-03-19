@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 } 
 
+
 .btn-custom {
   border: none;
   background-color: #E57A44;
@@ -20,36 +21,51 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e57a44cc;
 }
 
+.btn-custom:active {
+  background-color: #e57a44cc !important;
+}
+
+
 .list-style {
   background-color: #f4f8f6;
 }
+
 
 .card {
   border: none;
   border-radius: 10px;
 }
 
+.card-style {
+  background-color: #f4f8f6;
+  transition: 250ms ease-in;
+
+}  
+
+.card-style:hover {
+  transform: scale(1.1);
+}
+
 .card-title {
   font-weight: bold;
 }
+
 
 .form-style {
   background-color: #6C9A8F;
 }
 
-.button-style {
-  padding: 10px 20px;
-  background-color: #E57A44;
-}
-
-.btn-custom:hover {
-  background-color: #f37f45;
-}
 
 .cercle-style {
   background-color: #E57A44;
   width: 104px;
   height: 104px;
+  transition : 250ms ease;
+  box-shadow: 0 0px 15px #3d3d3d8b;
+}
+
+.cercle-style:hover {
+  box-shadow: 0 0px 25px #E57A44;
 }
 
 .navbar-color {

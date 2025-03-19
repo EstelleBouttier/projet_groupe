@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import "./pricing.css";
 
 function Tarifs() {
 
@@ -46,7 +45,7 @@ function Tarifs() {
                 <Card.Subtitle>{tarif.statut}</Card.Subtitle>
                 <Card.Text>{tarif.text}</Card.Text>
                 <Card.Text>{tarif.price}</Card.Text>
-                <Button className="button-style">Souscrire</Button>
+                <Button className="btn-custom" type="submit" href="#contact">Contactez-moi</Button>
               </Card.Body>
             </Card>
           </Col>

@@ -93,7 +93,7 @@ function Temoignages() {
             <Slider {...settings}>
                 {avisClients.map((avis) => (
                     <div key={avis.id} className="p-3">
-                        <Card className="shadow-sm border-light text-center p-3">
+                        <Card className="shadow border-light text-center p-3">
                             <Card.Body>
                                 <h3>{avis.nom}</h3>
                                 <p>"{avis.commentaire}"</p>
