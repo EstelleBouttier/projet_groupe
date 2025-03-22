@@ -30,6 +30,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f4f8f6;
 }
 
+.calendrier {
+  min-width: 320px ;
+  height: 700px;
+
+}
+
+
 
 .card {
   border: none;

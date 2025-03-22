@@ -7,7 +7,7 @@ function Contact() {
 
     return (
         <Container id="contact">
-            <Row className="my-5 d-flex justify-content-center align-items-center">
+            <Row className="my-5 align-items-center">
                 <h1 className="text-center">Contactez-moi</h1>
                 <Col xs={12} md={6}>
                     <Card className="p-4 shadow-sm text-center">

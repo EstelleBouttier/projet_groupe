@@ -36,7 +36,7 @@ function Tarifs() {
         </Col>
       </Row>
 
-      <Row className="py-3 justify-content-center text-center">
+      <Row className="py-3 text-center">
         {mesTarifs.map((tarif) => (
           <Col key={tarif.id} xs={12} md={4} >
             <Card className="card-style mb-2 shadow-lg">

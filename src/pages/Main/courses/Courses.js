@@ -33,7 +33,7 @@ function Courses() {
 
     return (
         <Container id="courses">
-            <Row className="my-5 justify-content-center align-items-center text-center">
+            <Row className="my-5 text-center">
                 <Col>
                     <h1 className="mt-3 mb-4">Mais les cours proposés, c'est quoi?</h1>
                     <p>Je vous propose une large gamme de formations adaptées à tous les niveaux. Que vous souhaitiez apprendre les bases, améliorer votre grammaire, enrichir votre vocabulaire ou perfectionner votre expression orale, mes cours vous accompagneront dans votre apprentissage.</p>

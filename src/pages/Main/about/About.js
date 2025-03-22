@@ -8,7 +8,7 @@ function About() {
     return (
         <Container id="about">
             <Row>
-                <Col xs={12} sm={12} md={6} lg={6} className="my-5 text-center ms-auto">
+                <Col xs={12} md={6} className="my-5 text-center">
                     <h1>Jane Doe</h1>
                     <p className="py-3">Passionnée par l'enseignement du français, Nom Prénom,  met son expertise et son enthousiasme au service de ses élèves. Grâce à une approche bienveillante et interactive, elle accompagne chaque apprenant vers une progression efficace et durable.</p>
                     <h2 className="fs-4">Philosophie d'enseignement</h2>
@@ -26,7 +26,7 @@ function About() {
                     </div>
                 </Col>
 
-                <Col xs={12} sm={12} md={6} lg={6} className="text-center order-lg-first ms-auto">
+                <Col xs={12} md={6} className="text-center order-md-first">
                     <Image
                         src={image}
                         alt="portrait d'une femme"
