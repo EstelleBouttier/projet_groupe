@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Row, Col, Form, Card, Button } from "react-bootstrap";
 import { BsEnvelope, BsGeoAlt, BsTelephone } from 'react-icons/bs';
 
-
 function Contact() {
-
     return (
         <Container id="contact">
             <Row className="my-5 align-items-center">
                 <h1 className="text-center">Contactez-moi</h1>
-                <Col xs={12} md={6}>
+                
+                {/* Carte avec les informations de contact */}
+                <Col md={6}>
                     <Card className="p-4 shadow-sm text-center">
                         <Card.Body>
                             <Card.Title className="mb-4">Restons en contact !</Card.Title>
@@ -31,8 +31,8 @@ function Contact() {
                     </Card>
                 </Col>
 
-
-                <Col xs={12} md={6}>
+                {/* Formulaire de contact */}
+                <Col md={6}>
                     <Card className="form-style my-5 shadow-sm">
                         <Card.Body>
                             <Card.Title className="mb-3 text-center">Envoyez-moi un message</Card.Title>
@@ -41,7 +41,7 @@ function Contact() {
                                     <Form.Label>Nom</Form.Label>
                                     <Form.Control type="text" placeholder="Dupont" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="contactForm.Prenom">
+                                <Form.Group className="mb-3" controlId="formPrenom">
                                     <Form.Label>Prénom</Form.Label>
                                     <Form.Control type="text" placeholder="Aurélie" />
                                 </Form.Group>
@@ -49,9 +49,9 @@ function Contact() {
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control type="email" placeholder="nom@exemple.com" />
                                 </Form.Group>
-                                <Form.Group className="mb-3" controlId="contactForm.Telephone">
+                                <Form.Group className="mb-3" controlId="formTelephone">
                                     <Form.Label>Téléphone</Form.Label>
-                                    <Form.Control type="tel" placeholder="061567654534" />
+                                    <Form.Control type="tel" placeholder="06XXXXXXXX" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formMessage">
                                     <Form.Label>Message</Form.Label>
@@ -64,11 +64,9 @@ function Contact() {
                         </Card.Body>
                     </Card>
                 </Col>
-
             </Row>
         </Container>
     );
-
 }
 
 export default Contact;

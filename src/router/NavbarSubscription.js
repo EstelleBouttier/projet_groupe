@@ -4,11 +4,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../images/homePage/logo.png";
 
-function NavBar() {
+function NavbarSubscription() {
   return (
     <Navbar expand="lg" className="navbar-color" fixed="top" >
       <Container fluid>
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <img
             src={logo}
             width="30"
@@ -29,4 +29,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavbarSubscription;

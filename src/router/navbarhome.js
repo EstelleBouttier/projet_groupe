@@ -1,26 +1,22 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../images/homePage/logo.png";
 
 function NavBar() {
   return (
     <Navbar expand="lg" className="navbar-color" fixed="top" >
       <Container fluid>
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <img
             src={logo}
             width="30"
             height="30"
-            alt="logo"
+            alt="Logo du site qui permet de retourner à l'accueil"
           />
         </Navbar.Brand>
-        <Navbar.Toggle className="navbar-toggler-color" aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0 navbar-height"
-          >
+        <Navbar.Toggle className="navbar-toggler-color" aria-controls="navbarScroll" aria-label="Ouvre le menu de navigation"/>
+        <Navbar.Collapse id="navbarScroll" role="navigation">
+          <Nav className="me-auto">
             <Nav.Link href="/">Accueil</Nav.Link>
             <Nav.Link href="#about">A propos</Nav.Link>
             <Nav.Link href="#courses">Cours</Nav.Link>

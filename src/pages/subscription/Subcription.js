@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import NavbarSubscription from "../../router/NavbarSubscription";
+import NavbarSubscription from "../../router/navbarSubscription";
 
 const Reservation = () => {
 

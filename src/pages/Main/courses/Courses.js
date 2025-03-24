@@ -5,7 +5,7 @@ function Courses() {
 
     const mesCours = [
         {
-            id : 1,
+            id: 1,
             title: "🆕 Débutants",
             text: "Un cours conçu pour ceux qui commencent de zéro, avec des leçons sur l'alphabet, les salutations, et les bases de la grammaire."
         },
@@ -39,23 +39,22 @@ function Courses() {
                     <p>Je vous propose une large gamme de formations adaptées à tous les niveaux. Que vous souhaitiez apprendre les bases, améliorer votre grammaire, enrichir votre vocabulaire ou perfectionner votre expression orale, mes cours vous accompagneront dans votre apprentissage.</p>
                     <p>Grâce à des leçons variées, des exercices pratiques et un suivi personnalisé, vous pourrez avancer à votre rythme et atteindre vos objectifs linguistiques.</p>
                     <h2 className="fs-5 mb-4">Voici quelques exemples de cours que je propose sur mon site de cours de français en ligne :</h2>
+                
+                    <ListGroup as="ol" numbered>
+                        {mesCours.map((cours) => (
+                            <ListGroup.Item
+                                key={cours.id}
+                                as="li"
+                                className="shadow list-style col-sm-12 col-md-6 col-lg-6 m-auto mb-2 d-flex justify-content-between align-items-start">
+                                <div className="ms-2 me-auto">
+                                    <div className="fw-bold">{cours.title}</div>
+                                    {cours.text}
+                                </div>
+                            </ListGroup.Item>
+                        ))}
+                    </ListGroup>
                 </Col>
             </Row>
-
-            <ListGroup as="ol" numbered>
-                {mesCours.map((cours) => (
-                    <ListGroup.Item
-                        key={cours.id}
-                        as="li"
-                        className="shadow list-style col-sm-12 col-md-6 col-lg-6 m-auto mb-2 d-flex justify-content-between align-items-start"
-                    >
-                        <div className="ms-2 me-auto">
-                            <div className="fw-bold">{cours.title}</div>
-                            {cours.text}
-                        </div>
-                    </ListGroup.Item>
-                ))}
-            </ListGroup>
         </Container >
     );
 }

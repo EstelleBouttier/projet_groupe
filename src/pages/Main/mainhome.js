@@ -1,11 +1,11 @@
-import Home from "./home/Home"
-import About from "./about/About";
-import Courses from "./courses/Courses";
-import Divider from "../../components/Divider";
-import Pricing from "./pricing/Pricing";
-import Testimony from "./testimony/Testimony";
-import Contact from "./contact/Contact";
-import NavBar from "../../router/Navbar";
+import Home from "./home/home.js"
+import About from "./about/about.js";
+import Courses from "./courses/courses.js";
+import Divider from "../../components/divider.js";
+import Pricing from "./pricing/pricing.js";
+import Testimony from "./testimony/testimony.js";
+import Contact from "./contact/contact.js";
+import NavBar from "../../router/navbarhome.js";
 
 function Main() {
     return (

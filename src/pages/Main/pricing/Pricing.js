@@ -38,20 +38,19 @@ function Tarifs() {
 
       <Row className="py-3 text-center">
         {mesTarifs.map((tarif) => (
-          <Col key={tarif.id} xs={12} md={4} >
+          <Col key={tarif.id} md={4} >
             <Card className="card-style mb-2 shadow-lg">
               <Card.Body>
                 <Card.Title>{tarif.title}</Card.Title>
                 <Card.Subtitle>{tarif.statut}</Card.Subtitle>
                 <Card.Text>{tarif.text}</Card.Text>
                 <Card.Text>{tarif.price}</Card.Text>
-                <Button className="btn-custom" type="submit" href="#contact">Contactez-moi</Button>
+                <Button className="btn-custom" href="#contact" aria-label="Contactez-moi pour réserver un cours">Contactez-moi</Button>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
-
     </Container>
   );
 }
