@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Form, Card, Button } from "react-bootstrap";
 import { BsEnvelope, BsGeoAlt, BsTelephone } from 'react-icons/bs';
 
 function Contact() {
+    const [validated, setValidated] = useState(false);
+
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        setValidated(true);
+    };
+
     return (
         <Container id="contact">
             <Row className="my-5 align-items-center">
                 <h1 className="text-center">Contactez-moi</h1>
-                
+
                 {/* Carte avec les informations de contact */}
                 <Col md={6}>
                     <Card className="p-4 shadow-sm text-center">
@@ -36,26 +47,44 @@ function Contact() {
                     <Card className="form-style my-5 shadow-sm">
                         <Card.Body>
                             <Card.Title className="mb-3 text-center">Envoyez-moi un message</Card.Title>
-                            <Form>
+                            <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                 <Form.Group className="mb-3" controlId="formNom">
                                     <Form.Label>Nom</Form.Label>
-                                    <Form.Control type="text" placeholder="Dupont" />
+                                    <Form.Control type="text" placeholder="Dupont" required />
+                                    <Form.Control.Feedback type="invalid">
+                                        Veuillez entrer votre nom.
+                                    </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formPrenom">
                                     <Form.Label>Prénom</Form.Label>
-                                    <Form.Control type="text" placeholder="Aurélie" />
+                                    <Form.Control type="text" placeholder="Aurélie" required />
+                                    <Form.Control.Feedback type="invalid">
+                                        Veuillez entrer votre prénom.
+                                    </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="nom@exemple.com" />
+                                    <Form.Control type="email" placeholder="nom@exemple.com" required />
+                                    <Form.Control.Feedback type="invalid">
+                                        Veuillez entrer une adresse email valide.
+                                    </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formTelephone">
                                     <Form.Label>Téléphone</Form.Label>
-                                    <Form.Control type="tel" placeholder="06XXXXXXXX" />
+                                    <Form.Control type="tel" placeholder="06XXXXXXXX" required />
+                                    <Form.Control.Feedback type="invalid">
+                                        Veuillez entrer un numéro de téléphone valide.
+                                    </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formMessage">
                                     <Form.Label>Message</Form.Label>
-                                    <Form.Control as="textarea" placeholder="Écrivez votre message ici" rows={3} />
+                                    <Form.Control as="textarea" placeholder="Écrivez votre message ici" rows={3} required />
+                                    <Form.Control.Feedback type="invalid">
+                                        Veuillez écrire un message.
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group className="mb-3">
+                                
                                 </Form.Group>
                                 <div className="d-flex justify-content-end">
                                     <Button className="btn-custom" type="submit">Envoyer</Button>
