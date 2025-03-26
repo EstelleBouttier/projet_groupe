@@ -14,7 +14,7 @@ function NavBar() {
             alt="Logo du site qui permet de retourner à l'accueil"
           />
         </Navbar.Brand>
-        <Navbar.Toggle className="navbar-toggler-color" aria-controls="navbarScroll" aria-label="Ouvre le menu de navigation"/>
+        <Navbar.Toggle className="navbar-toggler-color" aria-controls="navbarScroll" aria-label="Ouvre le menu de navigation" />
         <Navbar.Collapse id="navbarScroll" role="navigation">
           <Nav className="me-auto">
             <Nav.Link href="/">Accueil</Nav.Link>
@@ -23,8 +23,11 @@ function NavBar() {
             <Nav.Link href="#pricing">Tarifs</Nav.Link>
             <Nav.Link href="#testimony">Témoignages</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link onClick={() =>
-                        window.open('http://localhost:3000/subscription', '_blank')}>Réserver un cours</Nav.Link>
+            <Nav.Link onClick={() => {
+              window.open(`${window.location.origin}/subscription`, '_blank')
+            }
+            }>Réserver un cours</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
