@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import NavbarSubscription from "../../router/navbarSubscription";
 
 const Reservation = () => {
 
@@ -12,11 +11,9 @@ const Reservation = () => {
   }, []);
 
   return (
-    <>
-      <NavbarSubscription />
-      <Container className="mt-5 text-center">
-        <h2>Réservez un rendez-vous</h2>
+      <Container className="text-center">
         <Row >
+          <h2 className="mb-5">Réservez un rendez-vous</h2>
           <Col>
             <div
               className="calendrier calendly-inline-widget"
@@ -25,7 +22,6 @@ const Reservation = () => {
           </Col>
         </Row>
       </Container>
-    </>
   );
 };
 

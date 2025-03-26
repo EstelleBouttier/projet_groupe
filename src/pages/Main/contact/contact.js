@@ -17,7 +17,7 @@ function Contact() {
     return (
         <Container id="contact">
             <Row className="my-5 align-items-center">
-                <h1 className="text-center">Contactez-moi</h1>
+                <h2 className="text-center">Contactez-moi</h2>
 
                 {/* Carte avec les informations de contact */}
                 <Col md={6}>

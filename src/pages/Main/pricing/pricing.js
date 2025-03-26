@@ -22,7 +22,7 @@ function Tarifs() {
       id: 3,
       title: "Forfait 10 séances",
       statut: "Pour un suivi complet",
-      text: "Un pack de 10 cours pour un suivi régulier",
+      text: "Un pack de 10 cours pour un suivi régulier et approfondi",
       price: "260€ (26€/leçon)"
     },
   ];
@@ -31,7 +31,7 @@ function Tarifs() {
     <Container id="pricing" className="my-5 text-center">
       <Row>
         <Col>
-          <h1>Nos Tarifs</h1>
+          <h2>Nos Tarifs</h2>
           <p>Choisissez l'offre qui vous convient et commencez votre apprentissage du français !</p>
         </Col>
       </Row>

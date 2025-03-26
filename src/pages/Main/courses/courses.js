@@ -35,10 +35,10 @@ function Courses() {
         <Container id="courses">
             <Row className="my-5 text-center">
                 <Col>
-                    <h1 className="mt-3 mb-4">Mais les cours proposés, c'est quoi?</h1>
+                    <h2 className="mt-3 mb-4">Mais les cours proposés, c'est quoi?</h2>
                     <p>Je vous propose une large gamme de formations adaptées à tous les niveaux. Que vous souhaitiez apprendre les bases, améliorer votre grammaire, enrichir votre vocabulaire ou perfectionner votre expression orale, mes cours vous accompagneront dans votre apprentissage.</p>
                     <p>Grâce à des leçons variées, des exercices pratiques et un suivi personnalisé, vous pourrez avancer à votre rythme et atteindre vos objectifs linguistiques.</p>
-                    <h2 className="fs-5 mb-4">Voici quelques exemples de cours que je propose sur mon site de cours de français en ligne :</h2>
+                    <h3 className="fs-5 my-5">Voici quelques exemples de cours que je propose sur mon site de cours de français en ligne :</h3>
                 
                     <ListGroup as="ol" numbered>
                         {mesCours.map((cours) => (
@@ -53,6 +53,7 @@ function Courses() {
                             </ListGroup.Item>
                         ))}
                     </ListGroup>
+                    <h3 className="fs-5 my-5">Chaque cours est conçu pour s’adapter à votre niveau et à vos objectifs, avec des supports variés et un suivi personnalisé 🚀</h3>
                 </Col>
             </Row>
         </Container >

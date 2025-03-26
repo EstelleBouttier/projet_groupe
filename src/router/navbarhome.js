@@ -23,7 +23,8 @@ function NavBar() {
             <Nav.Link href="#pricing">Tarifs</Nav.Link>
             <Nav.Link href="#testimony">Témoignages</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="/subscription">Réserver un cours</Nav.Link>
+            <Nav.Link onClick={() =>
+                        window.open('http://localhost:3000/subscription', '_blank')}>Réserver un cours</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

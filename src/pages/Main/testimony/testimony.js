@@ -12,7 +12,7 @@ function Temoignages() {
       id: 1,
       nom: "Marie Dupont",
       commentaire: "Les cours sont excellents et très bien structurés ! J'ai énormément progressé en français.",
-      note: 4
+      note: 3.5
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ function Temoignages() {
       id: 3,
       nom: "Sophie Bernard",
       commentaire: "Les exercices sont bien adaptés à mon niveau. Satisfaite de mon apprentissage.",
-      note: 3.5
+      note: 3
     },
     {
       id: 4,
@@ -35,14 +35,14 @@ function Temoignages() {
     {
       id: 5,
       nom: "Emma Lefevre",
-      commentaire: "Grâce à ces cours, j'ai enfin confiance en mon français !",
-      note: 4.5
+      commentaire: "Grâce à ces cours, j'ai enfin confiance en mon français!",
+      note: 4
     },
     {
       id: 6,
       nom: "Paul Durand",
       commentaire: "Les supports sont clairs et les explications détaillées. J'apprécie vraiment la méthode pédagogique.",
-      note: 4
+      note: 3.5
     },
     {
       id: 7,
@@ -88,8 +88,9 @@ function Temoignages() {
 
   return (
     <Container id="testimony" className="my-5 text-center py-5">
-      <h1>Nos Témoignages</h1>
-      <p>Découvrez ce que nos élèves pensent de nos cours !</p>
+      <h2>Nos Témoignages</h2>
+      <p>Découvrez ce que nos apprenants pensent de nos cours ! Grâce à leurs témoignages, plongez dans leur expérience et voyez comment nos formations les ont aidés à progresser en français. Leur motivation et leurs réussites sont notre plus belle récompense !
+      </p>
 
       <Slider {...settings}>
         {avisClients.map((avis) => (
