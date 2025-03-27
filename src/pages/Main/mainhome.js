@@ -7,7 +7,6 @@ import Testimony from "./testimony/testimony.js";
 import Contact from "./contact/contact.js";
 import NavBar from "../../router/navbarhome.js";
 
-
 function Main() {
     return (
         <>

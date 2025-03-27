@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import image from "../../../images/homePage/accueil.jpg";
 
-
-
 function Home() {
     return (
         <Container id="home" className="pt-5 mb-5 text-center">
